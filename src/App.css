@@ -1,0 +1,116 @@
+:root {
+  --neon-color: #bc13fe; /* Sizga yoqadigan neon rang (binafsha, yashil, ko'k) */
+  --bg-color: #0d0221;   /* To'q ko'k/qora fon */
+}
+.btnfriend {
+  background: transparent;
+  color: var(--neon-color);
+  border: 1px solid var(--neon-color);
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 0 5px var(--neon-color), inset 0 0 5px var(--neon-color);
+  transition: 0.3s;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btnfriend:hover {
+  background: var(--neon-color);
+  color: white;
+  box-shadow: 0 0 20px var(--neon-color), 0 0 40px var(--neon-color);
+}
+
+/* Neon input */
+.inputfriend {
+  background: #1a0b2e;
+  border: 1px solid var(--neon-color);
+  color: white;
+  padding: 10px;
+  box-shadow: 0 0 5px var(--neon-color);
+  outline: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.inputfriend:focus {
+    animation: circle infinite 2s;
+}
+
+@keyframes circle {
+    0% {
+        background-color: var(--bg-color);
+        color: var(--neon-color);
+    }
+    50% {
+        background-color: var(--neon-color);
+        color: aliceblue;
+    }
+    100% {
+        background-color: var(--bg-color);
+        color: var(--neon-color);
+    }
+}
+
+
+/* Neon matn effekti */
+h1 {
+  text-shadow: 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
+  color: #fff;
+}
+
+.card-friend {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(26, 11, 46, 0.6); /* Yarim shaffof qorong'u fon */
+  border: 1px solid var(--neon-color);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px var(--neon-color);
+  transition: 0.3s;
+}
+
+.card-friend:hover {
+  transform: scale(1.05); /* Sichqoncha borganda kattalashadi */
+  box-shadow: 0 0 20px var(--neon-color);
+}
+
+.fri {
+  font-size: 24px;
+  color: var(--neon-color);
+}
+
+.cardsfri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 50px;
+    align-items: start;
+    justify-content: space-around;
+}
+.delete-btn {
+  background: transparent;
+  border: 1px solid #ff4d4d; /* Neon qizil rang (o'chirish uchun mos) */
+  color: #ff4d4d;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px #ff4d4d;
+  margin-left: auto;
+}
+
+.delete-btn:hover {
+  background: #ff4d4d;
+  color: white;
+  box-shadow: 0 0 15px #ff4d4d, 0 0 30px #ff4d4d; /* Porlash effekti */
+  transform: scale(1.1); /* Kichik kattalashish */
+}
+
+.delete-icon {
+  font-size: 18px;
+}
