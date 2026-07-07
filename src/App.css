@@ -114,3 +114,66 @@ h1 {
 .delete-icon {
   font-size: 18px;
 }
+
+.api-section {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid var(--neon-color);
+  border-radius: 12px;
+  background: rgba(26, 11, 46, 0.6);
+  box-shadow: 0 0 10px var(--neon-color);
+}
+
+.api-section h2 {
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 0 0 8px var(--neon-color);
+}
+
+.api-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.api-card {
+  border: 1px solid var(--neon-color);
+  border-radius: 10px;
+  padding: 15px;
+  background: rgba(12, 6, 25, 0.9);
+  color: #f1e8ff;
+}
+
+.api-card h3 {
+  margin: 0 0 10px;
+  color: var(--neon-color);
+}
+
+.api-card p {
+  margin: 6px 0;
+}
+
+.api-error {
+  color: #ff6b6b;
+}
+
+.friendscontent {
+  margin-bottom: 30px;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 10px;
+}
+
+.search-input {
+  width: min(420px, 100%);
+  border-radius: 10px;
+}
+
+.empty-state {
+  color: #f2d9ff;
+  text-align: center;
+  width: 100%;
+}
